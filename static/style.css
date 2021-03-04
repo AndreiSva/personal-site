@@ -1,0 +1,63 @@
+:root {
+  --fg: #ebdbb2;
+  --bg: #1d2021;
+
+  --red: #fb4934;
+  --green: #b8bb26;
+  
+  --focused: #fabd2f;
+  --unfocused: #fabd2d;
+}
+
+html {background-color: var(--bg)} 
+h1, p {color: var(--fg);}
+a, .navbar-link {color: var(--green); text-decoration: underline;}
+
+a:hover {
+	font-weight: bold;
+}
+
+.tab {
+	display: inline-block;
+    margin-left: 40px;	
+}
+
+p {
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: larger;
+}
+
+.card {
+	outline: double;
+	color: var(--unfocused);
+	
+	width: 50%;
+	height: auto;
+
+	margin: auto;
+} 
+
+.card-title {
+	padding-top: 20px;
+	text-align: center;	
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: var(--green);
+}
+
+.card-body {
+	padding: 20px;
+}
+
+#navbar {
+	align-items: center;
+  	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar-link {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: var(--focused);
+	text-decoration: underline;
+}

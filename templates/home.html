@@ -1,0 +1,18 @@
+{% extends "basic.html" %}
+{% block content %}
+    <div class="card">
+	<pre class="card-title">
+ _  _  ____  __     ___  __   _  _  ____ 
+/ )( \(  __)(  )   / __)/  \ ( \/ )(  __)
+\ /\ / ) _) / (_/\( (__(  O )/ \/ \ ) _) 
+(_/\_)(____)\____/ \___)\__/ \_)(_/(____)
+	</pre>
+	<p class="card-body">
+	<span class="tab"></span>Hello! I'm Andrei. I'm a high school student from Canada, always exploring new topics in programming and computers. Currently I'm very interested in programming language design and I'm writing my own bytecode interpreter virtual machine called <a href="https://github.com/AndreiSva/Sail-VM">Sail VM</a> in order to eventually work up to building my own compiler. You can find a few of my projects over at my <a href="https://github.com/AndreiSva">github</a> or at my <a href={{ url_for('projects') }}>projects page</a>.
+	</p>
+	<p class="card-body"> Here's a bunch of facts about me!</p>	
+	<span class="tab"></span><span style="color: var(--green);" class="card-body">*</span> <p style="display: inline"> I'm a full-time Gentoo Linux user and GNU/Linux enthousiast</p><br><br>
+	<span class="tab"></span><span style="color: var(--green);" class="card-body">*</span> <p style="display: inline"> Math and Science are my favorite subjects</p><br><br>
+	<span class="tab"></span><span style="color: var(--green);" class="card-body">*</span> <p style="display: inline"> When I'm not at the computer, you'll find me either walking in the park</p><br><br>
+    </div>
+{% endblock %}
