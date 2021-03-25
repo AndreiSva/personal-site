@@ -13,3 +13,6 @@ def projects(project=None):
         return render_template("projects.html", title="projects")
     else:
         return render_template(f"projects/{project}.html", title=project)
+
+if __name__ == "__main__":
+    app.run()

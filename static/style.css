@@ -10,10 +10,14 @@
 }
 
 html {background-color: var(--bg)} 
-h1, p {color: var(--fg);}
-a, .navbar-link {color: var(--green); text-decoration: underline;}
+h1, h2, h3, h4, h5, p {color: var(--fg); font-family: "Lucida Console", "Courier New", monospace;}
+a, .secondary-link, .navbar-link {color: var(--green); text-decoration: underline;}
 
-a:hover {
+.secondary-link {
+	color: gray;
+}
+
+a:hover, .secondary-link {
 	font-weight: bold;
 }
 
@@ -27,15 +31,28 @@ p {
 	font-size: larger;
 }
 
-.card {
+.card, .project-card {
 	outline: double;
 	color: var(--unfocused);
-	
+		
 	width: 50%;
 	height: auto;
 
 	margin: auto;
-} 
+	bottom: 20px;
+}
+
+.project-card {
+	padding: 20px;
+	width: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.card:hover {
+	color: var(--focused) !important;
+}
 
 .card-title {
 	padding-top: 20px;
@@ -44,8 +61,14 @@ p {
 	color: var(--green);
 }
 
+.card-subtitle {
+	text-align: center;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
 .card-body {
 	padding: 20px;
+	z-index: 1;
 }
 
 #navbar {
@@ -54,10 +77,22 @@ p {
 	display: flex;
 	flex-direction: row;
 }
-
 .navbar-link {
 	padding-left: 20px;
 	padding-right: 20px;
 	color: var(--focused);
 	text-decoration: underline;
+}
+
+.flex-container {
+	width: 75%;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.secondary-description {
+	display: inline;
+	color: gray;
 }
