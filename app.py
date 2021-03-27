@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import json
 
 app = Flask(__name__)
 
@@ -10,7 +11,9 @@ def root():
 @app.route("/projects/<project>")
 def projects(project=None):
     if project == None:
-        return render_template("projects.html", title="projects")
+        with open("projects.json", "r") as f:
+            project_info = json.loads(f.read())
+        return render_template("projects.html", title="projects", projects=project_info)
     else:
         return render_template(f"projects/{project}.html", title=project)
 

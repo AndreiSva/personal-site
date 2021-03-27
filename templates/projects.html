@@ -3,9 +3,13 @@
 
 <h1 class="card-title">Projects<h1>
 <div class="flex-container">
-    <div class="project-card">Sail-VM</div>
-    <div class="project-card">SeaScript</div>
-    <div class="project-card">kube</div>
+	{% for project in projects["projects"] %}
+    <div class="project-card">
+		{{ project["name"] }}
+		<p class="project-description project-footer">{{ project["date"] }}</p>
+		<p class="project-description">{{ project["description"] }}</p>
+    </div>
+	{% endfor %}
 </div>
 
 <h3 class="card-title" style="text-align: center; color: gray">old / experimental</h3>
