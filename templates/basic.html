@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>{{ title }} | Andrei</title>
-  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
-  <script src="static/scripts.js"></script>
+  <script src="/static/script.js"></script>
   <div style="margin: auto">
 	  <div id="navbar">
 		<a class="navbar-link" href="{{ url_for('root') }}">home</a>
 	  	<a class="navbar-link" href="{{ url_for('projects') }}">projects</a>
-	  	<a class="navbar-link">blog</a>
+		<a class="navbar-link" href="{{ url_for('blog') }}">blog</a>
 	  	<a class="navbar-link">contact</a>
 	  </div>
   </div>

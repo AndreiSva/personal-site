@@ -1,6 +1,7 @@
 :root {
   --fg: #ebdbb2;
   --bg: #1d2021;
+  --bg2: #282828;
 
   --red: #fb4934;
   --green: #b8bb26;
@@ -9,9 +10,17 @@
   --unfocused: #fabd2d;
 }
 
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/static/fonts/woff2/FiraCode-Light.woff2') format('woff2'),
+    url("/static/fonts/woff/FiraCode-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 html {background-color: var(--bg)} 
-h1, h2, h3, h4, h5, p {color: var(--fg); font-family: "Lucida Console", "Courier New", monospace;}
-a, .secondary-link, .navbar-link {color: var(--green); text-decoration: underline;}
+h1, h2, h3, h4, h5, p, a {color: var(--fg); font-family: "Lucida Console", "Courier New", monospace;}
+a, .secondary-link {color: var(--green); text-decoration: underline;}
 
 .secondary-link {
 	color: gray;
@@ -45,9 +54,14 @@ p {
 .project-card {
 	padding: 20px;
 	width: 300px;
+	height: 170px;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+.project-description {
+	font-size: 15px;	
 }
 
 .card:hover {
@@ -78,10 +92,14 @@ p {
 	flex-direction: row;
 }
 .navbar-link {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 8px;
+	margin-left: 10px;
+	margin-right: 10px;
 	color: var(--focused);
+	background-color: var(--bg2);
 	text-decoration: underline;
+	font-size: larger;
+	border-radius: 10px;
 }
 
 .flex-container {
@@ -95,4 +113,22 @@ p {
 .secondary-description {
 	display: inline;
 	color: gray;
+}
+
+.project-footer {
+	color: var(--focused);
+} 
+
+.project-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+}
+
+.code-block {
+	background-color: #282828;
+	font-size: medium;
+	padding: 2px;
+	font-family: "Fira Code";
 }

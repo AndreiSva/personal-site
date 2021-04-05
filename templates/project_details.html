@@ -1,0 +1,27 @@
+{% extends "basic.html" %}
+{% block content %}
+
+<h1 class="card-title">{{ project["name"] }}</h1>
+
+{% if image is not false %}
+<img class="project-img" src="/static/images/{{ project["name"] }}.{{ image }}">
+{% endif %}
+
+<div style="margin: auto; text-align: center;">
+	<div style="display: inline-block; text-align: left;">
+		<p>github: <a href="{{ project["github-link"] }}">{{ project["github-link"] }}</a></p>
+		{% if project["link"] is not none %}
+		<p>try it out <a href="{{ project["link"] }}">here</a></p>
+		{% endif %}
+	</div>
+</div>
+<br>
+
+<div style="margin: auto; text-align: left; width: 1000px;">
+	<p style="display: inline-block; text-align: left;">
+	{% block project_content %}
+	{% endblock %}
+	</p>
+</div>
+
+{% endblock %}

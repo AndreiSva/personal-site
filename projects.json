@@ -1,0 +1,53 @@
+{
+	"projects": [
+		{
+			"name": "Sail-VM",
+			"description": "A bytecode interpreter virtual machine written in C. It strives to be simple, lightweight, and cross platform.",
+			"date": "2021",
+			"github-link": "https://github.com/AndreiSva/Sail-VM"
+		},
+
+		{
+			"name": "SeaScript",
+			"description": "SeaScript is an upcoming frontend to Sail-VM.",
+			"date": "2021",
+			"github-link": "https://github.com/AndreiSva/SeaScript"
+		},
+
+		{
+			"name": "This-Website",
+			"description": "A flask app that hosts my projects",
+			"date": "2021",
+			"github-link": "https://github.com/AndreiSva/personal-site"
+		},
+
+		{
+			"name": "Wave-Generator",
+			"description": "A command line sine wave generator written in rust.",
+			"date": "2021",
+			"github-link": "https://github.com/AndreiSva/wave-generator"
+		},
+
+		{
+			"name": "Kube",
+			"description": "Kube is an esoteric programming language inspired by BrainF. It adds a number of QOL improvements and more powerful IO. Kube is written in C.",
+			"date": "2020",
+			"github-link": "https://github.com/AndreiSva/kube"
+		},
+
+		{
+			"name": "Binary-Converter",
+			"description": "An online tool for converting text to binary and vise versa.",
+			"date": "2019",
+			"github-link": "https://github.com/AndreiSva/binary-converter",
+			"link": "https://andreiprogrammer.surge.sh/BinConvert.html"
+		},
+
+		{
+			"name": "Hang-Man-Game",
+			"description": "A (very) rough clone of the classic hangman game i made back in 2019.",
+			"date": "2019",
+			"github-link": "https://github.com/AndreiSva/Hang-Man-Game"
+		}
+	]
+}
