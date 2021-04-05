@@ -27,13 +27,19 @@ def projects(project=None):
                     image_type = "gif"
                 else:
                     image_type = False
-
-                try:
-                    print(p["link"])
-                except KeyError:
+                
+                if "link" not in p:
                     p["link"] = None
-
-                return render_template(f"projects/{p['name']}.html", title=project, project=p, image=image_type)
+                
+                p["source"] = []
+                with open(f"{dirpath}templates/projects/{project}.md", "r") as f:
+                    for line in f.readlines():
+                        p["source"].append(line.rstrip())
+                        p["source"].append("\\n")
+                    p["source"] = "".join(p["source"])
+                    print(p["source"])
+                
+                return render_template("project_details.html", title=project, project=p, image=image_type)
 
 @app.route("/blog")
 def blog():

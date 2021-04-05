@@ -19,8 +19,23 @@
 
 <div style="margin: auto; text-align: left; width: 1000px;">
 	<p style="display: inline-block; text-align: left;">
-	{% block project_content %}
-	{% endblock %}
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+	<div id="project_content">
+	</div>
+	<style>
+	pre {
+		color: var(--focused);
+		background-color: #282828;
+		font-size: medium;
+		padding: 2px;
+		font-family: "Fira Code";
+	}
+
+	</style>
+	<script>
+		document.getElementById('project_content').innerHTML = marked("{{ project["source"] }}");
+  	</script>
 	</p>
 </div>
 
