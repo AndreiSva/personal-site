@@ -3,7 +3,7 @@ import json
 import os.path
 
 app = Flask(__name__)
-dirpath = "/".join(os.path.realpath(__file__).split("/")[0:len(os.path.realpath(__file__).split("/")) - 1]) + "/"
+dirpath = os.environ["ASitePATH"] + "/"
 
 @app.route("/")
 def root():

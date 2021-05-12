@@ -102,6 +102,11 @@ p {
 	border-radius: 10px;
 }
 
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
 .flex-container {
 	width: 75%;
 	margin: auto;
