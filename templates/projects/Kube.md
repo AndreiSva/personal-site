@@ -41,7 +41,7 @@ Hello World
 ### 5. moving the register pointer
 you can move the register pointer (or the "selected" pointer) by using the `>` character. If there are no more registers to move to, kube will automatically create new registers on the fly. Lets see an example of this:
 ```
-\>
+>
 ```
 register values:
 ```

@@ -12,7 +12,7 @@ def root():
 @app.route('/projects')
 @app.route("/projects/<project>")
 def projects(project=None):
-    with open("projects.json", "r") as f:
+    with open(f"{dirpath}projects.json", "r") as f:
         project_info = json.loads(f.read())
     if project == None:
         return render_template("projects.html", title="projects", projects=project_info)

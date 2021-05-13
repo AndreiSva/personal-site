@@ -1,19 +1,20 @@
 {% extends "basic.html" %}
 {% block content %}
-	<pre class="card-title">
+	<div class="container">
+		<pre class="card-title">
  _  _  ____  __     ___  __   _  _  ____ 
 / )( \(  __)(  )   / __)/  \ ( \/ )(  __)
 \ /\ / ) _) / (_/\( (__(  O )/ \/ \ ) _) 
 (_/\_)(____)\____/ \___)\__/ \_)(_/(____)
-	</pre>
-	<div class="container">
+		</pre>
 			<p class="card-body">
 				Hello! I'm Andrei. I'm a high school student from Canada, always exploring new topics in programming and computers. Currently I'm very interested in programming language design and I'm writing my own bytecode interpreter virtual machine called <a href="https://github.com/AndreiSva/Sail-VM">Sail VM</a> in order to eventually work up to building my own compiler. You can find a few of my projects over at my <a href="https://github.com/AndreiSva">github</a> or at my <a href={{ url_for('projects') }}>projects page</a>.
 			</p>
-		<p>Here's a bunch of facts about me!</p>	
-			<h5 style="display: inline">- I'm a full-time Linux user and GNU/Linux enthousiast</h5><br><br>
-			<h5 style="display: inline">- Math and Science are my favorite subjects</h5><br><br>
-			<h5 style="display: inline">- When I'm not at the computer, you'll find me either walking in the park or reading a book</p><br><br>
+		<p style="text-align: center;">Here's a bunch of facts about me!</p>	
+			<ul><h5 style="display: inline">- I'm a full-time Linux user and GNU/Linux enthousiast</h5><br><br>
+				<h5 style="display: inline">- Math and Science are my favorite subjects</h5><br><br>
+				<h5 style="display: inline">- When I'm not at the computer, you'll find me either walking in the park or reading a book</p><br><br>
+			</ul>
 		</div>
 		<br>
 		{% if post != None %}

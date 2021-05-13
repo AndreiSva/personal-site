@@ -2,6 +2,7 @@
 {% block content %}
 
 <h1 class="card-title">{{ project["name"] }}</h1>
+<div class="container">
 
 {% if image is not false %}
 <img class="project-img" src="/static/images/{{ project["name"] }}.{{ image }}">
@@ -37,6 +38,7 @@
 		document.getElementById('project_content').innerHTML = marked("{{ project["source"] }}");
   	</script>
 	</p>
+	</div>
 </div>
 
 {% endblock %}

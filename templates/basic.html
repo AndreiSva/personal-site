@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>{{ title }} | Andrei</title>
-  <link rel="stylesheet" href="/static/style.css">
+	<meta charset="utf-8">
+	<title>{{ title }} | Andrei</title>
+	<link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
-  <script src="/static/script.js"></script>
-  <div style="margin: auto">
-	  <div id="navbar">
-		<a class="navbar-link" href="{{ url_for('root') }}">home</a>
-	  	<a class="navbar-link" href="{{ url_for('projects') }}">projects</a>
-		<a class="navbar-link" href="{{ url_for('blog') }}">blog</a>
-	  	<a class="navbar-link">contact</a>
-	  </div>
-  </div>
-  {% block content %}
-  {% endblock %}
+	<script src="/static/script.js"></script>
+	<div style="margin: auto">
+		<nav id="navbar">
+			<a class="navbar-link" href="{{ url_for('root') }}">home</a>
+			<a class="navbar-link" href="{{ url_for('projects') }}">projects</a>
+			<a class="navbar-link" href="{{ url_for('blog') }}">blog</a>
+			<a class="navbar-link">contact</a>
+		</nav>
+	</div>
+	{% block content %}
+	{% endblock %}
 </body>
 </html>

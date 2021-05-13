@@ -2,7 +2,7 @@
 {% block content %}
 
 <h1 class="card-title">Projects<h1>
-<div class="flex-container">
+<div class="flex-container container" style="max-width: 15000px;">
 	{% for project in projects["projects"] %}
     <div class="project-card">
 		<a style="color: var(--focused)" href={{ url_for("projects", project=project["name"]) }}>{{ project["name"] }}</a>

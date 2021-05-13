@@ -18,9 +18,16 @@
   font-style: normal;
 }
 
-html {background-color: var(--bg)} 
+html {
+	background-color: #020202;
+	opacity: 0.8;
+	background-image:  linear-gradient(30deg, #1d2021 12%, transparent 12.5%, transparent 87%, #1d2021 87.5%, #1d2021), linear-gradient(150deg, #1d2021 12%, transparent 12.5%, transparent 87%, #1d2021 87.5%, #1d2021), linear-gradient(30deg, #1d2021 12%, transparent 12.5%, transparent 87%, #1d2021 87.5%, #1d2021), linear-gradient(150deg, #1d2021 12%, transparent 12.5%, transparent 87%, #1d2021 87.5%, #1d2021), linear-gradient(60deg, #1d202177 25%, transparent 25.5%, transparent 75%, #1d202177 75%, #1d202177), linear-gradient(60deg, #1d202177 25%, transparent 25.5%, transparent 75%, #1d202177 75%, #1d202177);
+	background-size: 64px 112px;
+	background-position: 0 0, 0 0, 32px 56px, 32px 56px, 0 0, 32px 56px;
+}
 h1, h2, h3, h4, h5, p, a {color: var(--fg); font-family: "Lucida Console", "Courier New", monospace;}
 a, .secondary-link {color: var(--green); text-decoration: underline;}
+ul {color: var(--green);}
 
 .secondary-link {
 	color: gray;
@@ -85,14 +92,28 @@ p {
 	z-index: 1;
 }
 
+.btn {
+	background: var(--bg2);
+	margin: 10px;
+	margin-top: 10px;
+	outline: none;
+	border: none;
+	color: var(--fg);
+}
+
+.btn:hover {
+	box-shadow: 0 -3px var(--focused);
+}
+
 #navbar {
 	align-items: center;
   	justify-content: center;
 	display: flex;
 	flex-direction: row;
 }
+
 .navbar-link {
-	padding: 8px;
+	padding: 0.7%;
 	margin-left: 10px;
 	margin-right: 10px;
 	color: var(--focused);
@@ -103,8 +124,15 @@ p {
 }
 
 .container {
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: var(--bg);
 	max-width: 1000px;
 	margin: auto;
+	margin-top: 20px;
 }
 
 .flex-container {
